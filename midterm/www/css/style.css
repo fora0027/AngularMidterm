@@ -1,0 +1,17 @@
+.completedColour {
+    color: red;
+    text-decoration: line-through;
+}
+.toast{
+    color: #cecece;
+    text-align: center;
+    font-size: 1.5rem;
+    
+}
+.toastDiv{
+    display: block;
+    width: 75%;
+    margin: 2% auto;
+    background: #555555;
+    border-radius: 50px;
+}

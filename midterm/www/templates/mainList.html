@@ -1,0 +1,27 @@
+</br></br>
+<ion-list>    
+    <ion-item can-swipe="listCanSwipe" ng-repeat="list in lists">
+      <h2 ng-class="{completedColour: list.done == true}">{{list.listItem}}</h2>
+    <ion-option-button class="button-assertive" ng-click="remove(list)">
+        Remove
+        </ion-option-button> 
+    <ion-option-button class="button-balanced" ng-click="Completed(list)">
+    Finished!    
+        </ion-option-button>
+  </ion-item>
+    
+    <form ng-submit="addItem() ">
+        <div class="item item-input">
+        <label class="item-input-wrapper">
+            <input type="text" placeholder="Add Item Here.." ng-model="listInput">
+            </label>
+            <button class="button button-medium button-balanced">
+            Add Item
+            </button>
+        
+        </div>
+    </form>
+    <div class="toastDiv">
+        <toast class="toast"></toast>
+    </div>
+</ion-list>
